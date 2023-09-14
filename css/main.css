@@ -1,0 +1,80 @@
+/* Start global rules */
+:root {
+    --white-color: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+}
+* {
+    -webkit-box-sizing: border-box;
+    -mox-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: var(--light-gray);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+}
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
+}
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 980px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/* End global rules */
+/* Start main container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .box {
+    background-color: var(--white-color);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    width: 350px;
+}
+.container .box .image {
+    border-radius: 12px;
+    overflow: hidden;
+}
+.container .box .image img {
+    max-width: 100%;
+}
+.container .box .text {
+    text-align: center;
+    padding: 0 5px;
+    margin: 10px 0;
+}
+.container .box .text h2 {
+    font-weight: bold;
+    color: var(--dark-blue);
+}
+.container .box .text p {
+    color: #777;
+    padding: 0 15px;
+    margin: 10px 0;
+}
+/* End main container */
